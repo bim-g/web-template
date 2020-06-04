@@ -19,3 +19,87 @@
     border:1px solid #3e3e3e;
     border-radius: 20px;
 }
+.body{
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background: linear-gradient(#05295f, #07367c);
+}
+.btn-recherche {
+    width:100px;
+    background: rgb(250,250,250,0.2);
+    height:40px;
+}
+.btn-recherche:active {
+    background: rgb(250,250,250,0.2);
+}
+
+.profil{
+    width:50px!important;
+    height:50px;
+}
+.emergancy{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+.emergancy-bloc{
+    background: rgb(250, 250, 250, 0.2);
+    width: 147px;
+    height: 40px;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+    outline:0;
+    border:none;
+    transition-duration:.3s;
+    transform:translate3d(0, 0, 0)
+}
+.btn{
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    appearance:none;
+    background:0 0;
+    padding:0 10px;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+    outline:0;
+    border:none;
+    transition-duration:.3s;
+    transform:translate3d(0, 0, 0)
+}
+.btn:active{
+    background:rgba(0, 0, 0, .15)
+}
+.emergancy .icon{
+    width:35px;
+    height:35px;
+}
+.aboutcorona{
+    position: relative;
+}
+.direction{
+    position: absolute;
+    right:0;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 55px;
+    height: 55px;
+    background: rgb(250,250,250,0.4);
+    text-justify: auto;
+    text-align: center;
+}
+.Symptomecorona {
+    background:#05295f;
+    overflow: hidden;
+}
+.learmore{
+    background-color: rgb(250,250,250,0.2);
+    width:100px;
+}
