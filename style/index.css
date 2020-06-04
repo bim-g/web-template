@@ -62,10 +62,8 @@
     text-align:center;
     display:block;
     appearance:none;
-    background:0 0;
     padding:0 10px;
     white-space:nowrap;
-    text-overflow:ellipsis;
     cursor:pointer;
     position:relative;
     overflow:hidden;
@@ -102,4 +100,61 @@
 .learmore{
     background-color: rgb(250,250,250,0.2);
     width:100px;
+}
+.recherch{
+    width:40px!important;
+    height:40px;
+    background: rgb(250,250,250,0.2);
+    text-align: center;
+}
+.inforUpdate{
+    position: absolute;
+    left:50%;
+    bottom:0;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    /* height: ; */
+    z-index: 1;
+}
+.drapeau{
+    width: 45px!important;
+    height: 45px;
+}
+.barRed{
+    background: linear-gradient(to right ,#ffc0cb,rgb(255, 255, 255,0.2));
+}
+.barGreen{
+    background: linear-gradient(to right ,rgb(158, 235, 158),rgb(255, 255, 255,0.2));
+}
+.inforUpdate::before{
+    content:"";
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 90%;
+    height:100%;
+    border-radius: inherit;
+    background: rgb(250,250,250,0.6);
+    transform-origin: bottom;
+    transition: all .4s,width .3s .3s;
+    color:#fff;
+    z-index: -1;
+    transform: translate(0px,-20px);
+    margin:10px;
+}
+.inforUpdate::after{
+    content:"";
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 80%;
+    height:100%;
+    border-radius: inherit;
+    background: rgb(250,250,250,0.2);
+    transform-origin: bottom;
+    transition: all .4s,width .3s .3s;
+    color:#fff;
+    z-index: -1;
+    transform: translate(10px,-30px);
+    margin:10px;
 }
