@@ -1,0 +1,21 @@
+.mobile{
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+}
+.mobile .mobile-ctrl {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:380px;
+    height:680px;
+}
+.mobile iframe {    
+    width:375px;
+    height:640px ;
+    border:1px solid #3e3e3e;
+    border-radius: 20px;
+}
