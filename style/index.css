@@ -27,18 +27,24 @@
     bottom:0;
     background: linear-gradient(#05295f, #07367c);
 }
+.opaque{   
+    background: rgb(250, 250, 250, 0.2);    
+    transition: all .2s;
+    cursor: pointer;
+}
 .btn-recherche {
     width:100px;
-    background: rgb(250,250,250,0.2);
-    height:40px;
+    height:40px;    
 }
 .btn-recherche:active {
-    background: rgb(250,250,250,0.2);
+    background: rgb(0,0,0,0.2);
 }
-
+.maxwidth{
+    width: 100%;
+}
 .profil{
-    width:50px!important;
-    height:50px;
+    width:40px!important;
+    height:40px;
 }
 .emergancy{
     display: flex;
@@ -46,10 +52,8 @@
     gap:2rem;
 }
 .emergancy-bloc{
-    background: rgb(250, 250, 250, 0.2);
     width: 147px;
     height: 40px;
-    cursor:pointer;
     position:relative;
     overflow:hidden;
     outline:0;
@@ -76,8 +80,8 @@
     background:rgba(0, 0, 0, .15)
 }
 .emergancy .icon{
-    width:35px;
-    height:35px;
+    width:40px;
+    height:100%;
 }
 .aboutcorona{
     position: relative;
@@ -89,7 +93,6 @@
     transform: translate(-50%,-50%);
     width: 55px;
     height: 55px;
-    background: rgb(250,250,250,0.4);
     text-justify: auto;
     text-align: center;
 }
@@ -98,14 +101,11 @@
     overflow: hidden;
 }
 .learmore{
-    background-color: rgb(250,250,250,0.2);
     width:100px;
 }
 .recherch{
     width:40px!important;
     height:40px;
-    background: rgb(250,250,250,0.2);
-    text-align: center;
 }
 .inforUpdate{
     position: absolute;
@@ -115,6 +115,7 @@
     width: 300px;
     /* height: ; */
     z-index: 1;
+    cursor:pointer;
 }
 .drapeau{
     width: 45px!important;
@@ -126,6 +127,7 @@
 .barGreen{
     background: linear-gradient(to right ,rgb(158, 235, 158),rgb(255, 255, 255,0.2));
 }
+
 .inforUpdate::before{
     content:"";
     position: absolute;
@@ -139,14 +141,14 @@
     transition: all .4s,width .3s .3s;
     color:#fff;
     z-index: -1;
-    transform: translate(0px,-20px);
+    transform: translate(5px,-20px);
     margin:10px;
 }
 .inforUpdate::after{
     content:"";
     position: absolute;
-    top:0px;
-    left:0px;
+    top:0;
+    left:0;
     width: 80%;
     height:100%;
     border-radius: inherit;
@@ -155,6 +157,10 @@
     transition: all .4s,width .3s .3s;
     color:#fff;
     z-index: -1;
-    transform: translate(10px,-30px);
+    transform: translate(20px,-30px);
     margin:10px;
+}
+.inforUpdate::before:hover,
+.inforUpdate::after:hover{
+    transform: translate(10px, -30px);
 }
