@@ -1,18 +1,3 @@
-.mobile{
-    position: absolute;
-    top:0;
-    right:0;
-    left:0;
-    bottom:0;
-}
-.mobile .mobile-ctrl {
-    position: absolute;
-    left:50%;
-    top:50%;
-    transform: translate(-50%,-50%);
-    width:380px;
-    height:680px;
-}
 .mobile iframe {    
     width:375px;
     height:640px ;
@@ -26,6 +11,16 @@
     left:0;
     bottom:0;
     background: linear-gradient(#05295f, #07367c);
+}
+.general{
+    /* width: 100%; */
+    background: #05295f;
+    color:#e3e3e3;
+    transition: all 0.2s;
+}
+.general:hover{
+    color:#3e3e3e;
+    background: rgb(5, 41, 95,0.3);
 }
 .opaque{   
     background: rgb(250, 250, 250, 0.2);    
@@ -96,6 +91,7 @@
     text-justify: auto;
     text-align: center;
 }
+
 .Symptomecorona {
     background:#05295f;
     overflow: hidden;
