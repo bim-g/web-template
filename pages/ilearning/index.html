@@ -20,61 +20,16 @@
             </div>
         </div>
     </div>
-    <div class="bottombran ">
-        <div class="courseItem">
+    <div class="bottombran " id="courContaint">
+        <div class="courseItem" w3-repeat="cours">
             <div class="imgContainer w3-light-gray w3-padding">
-                <span class="itemicon w3-jumbo"><i class="fa fa-language"></i></span>
+                <span class="itemicon w3-jumbo"><i class="{{icon}}"></i></span>
             </div>
             <div class="w3-padding w3-center">
-                <span class="w3-text-gray"><b>Languages</b></span><br>
-                <span class="w3-small w3-text-gray">12 courses</span>
+                <span class="w3-text-gray"><b>{{title}}</b></span><br>
+                <span class="w3-small w3-text-gray">{{cours_number}} courses</span>
             </div>
-        </div>
-        <div class="courseItem">
-            <div class="imgContainer w3-light-gray w3-padding">
-                <span class="itemicon w3-jumbo"><i class="fa fa-graduation-cap"></i></span>
-            </div>
-            <div class="w3-padding w3-center">
-                <span class="w3-text-gray"><b>Teaching</b></span><br>
-                <span class="w3-small w3-text-gray">12 courses</span>
-            </div>
-        </div>
-        <div class="courseItem">
-            <div class="imgContainer w3-light-gray w3-padding">
-                <span class="itemicon w3-jumbo"><i class="fa fa-cutlery"></i></span>
-            </div>
-            <div class="w3-padding w3-center">
-                <span class="w3-text-gray"><b>Cooking</b></span><br>
-                <span class="w3-small w3-text-gray">12 courses</span>
-            </div>
-        </div>            
-        <div class="courseItem">
-            <div class="imgContainer w3-light-gray w3-padding">
-                <span class="itemicon w3-jumbo"><i class="fa fa-camera-retro"></i></span>
-            </div>
-            <div class="w3-padding w3-center">
-                <span class="w3-text-gray"><b>Photographie</b></span><br>
-                <span class="w3-small w3-text-gray">12 courses</span>
-            </div>
-        </div>
-        <div class="courseItem">
-            <div class="imgContainer w3-light-gray w3-padding">
-                <span class="itemicon w3-jumbo"><i class="fa fa-paint-brush"></i></span>
-            </div>
-            <div class="w3-padding w3-center">
-                <span class="w3-text-gray"><b>Design</b></span><br>
-                <span class="w3-small w3-text-gray">12 courses</span>
-            </div>
-        </div>
-        <div class="courseItem">
-            <div class="imgContainer w3-light-gray w3-padding">
-                <span class="itemicon w3-jumbo"><i class="fa fa-group"></i></span>
-            </div>
-            <div class="w3-padding w3-center">
-                <span class="w3-text-gray"><b>Communication</b></span><br>
-                <span class="w3-small w3-text-gray">12 courses</span>
-            </div>
-        </div>            
+        </div>         
     </div>    
     <!-- modal -->
     <div class="w3-modal w3-animate-opacity" id="search">
@@ -96,5 +51,6 @@
         </div>
     </div>
     <script src="../../js/w3.js"></script>
+    <script src="../../js/index.js"></script>
 </body>
 </html>
