@@ -23,6 +23,30 @@ body {
     bottom:0;
     background: linear-gradient(#05295f, #07367c);
 }
+.welcomblocs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 1.2em; */
+}
+.welcomblocs > div{
+    position: relative;
+    width:140px;
+    height: 140px;
+    margin:5px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s;
+    text-shadow: 0px 1px 3px #000;
+}
+.welcomblocs>div>span{
+    position: absolute;
+    left:50%;
+    top:75%;
+    transform: translate(-50%,-50%);
+}
 .general{
     /* width: 100%; */
     background: #05295f;
