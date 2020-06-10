@@ -15,7 +15,7 @@
                     <div class="w3-bar-item w3-round w3-margin-bottom w3-padding general btn">
                         <span class="w3-hide-small">Home</span>
                     </div>
-                    <div class="w3-bar-item w3-round w3-margin-bottom w3-padding general btn" >About</div>
+                    <div class="w3-bar-item w3-round w3-margin-bottom w3-padding general btn" onclick="w3.shoh('#about')" >About</div>
                     <div class="w3-bar-item w3-round w3-margin-bottom w3-padding general btn">infos</div>
                 </div>                
             </div>
@@ -24,7 +24,21 @@
             </div>
         </div>
     </div>
-    
+    <!-- about modal -->
+    <div class="w3-modal w3-animate-opacity" id="about">
+        <div class="w3-modal-content w3-animate-zoom " style="width:200px">
+            <div class="w3-blue">
+                <div class="w3-text-red w3-round-xxlarge w3-right w3-xlarge btn" onclick="w3.hide('#about')">X</div>
+                <h3 class="w3-teal w3-padding">About</h3>
+            </div>
+            <div class="w3-padding w3-center">
+                <span>Ibrahim Mussa</span><br>
+                <span>ibmussafb@gmail.com</span><br>
+                <span>ibmussa@outlook.fr</span><br>
+                <span>Fullstack web-develloper</span><br>
+            </div>
+        </div>
+    </div>
     <script src="./js/w3.js"></script>
     <script src="./js/index.js"></script>
     <script>
