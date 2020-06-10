@@ -230,7 +230,18 @@ body {
     height: 200px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
-.menulist{
+.menulist,
+.itemList {
     position: relative;
     top:110px;
+}
+.itemList {
+    height: 70px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+.detailinfos {
+    height: 5px;
+    word-wrap: break-word;
 }
