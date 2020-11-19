@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/w3.css">
+    <link rel="stylesheet" href="../../style/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../style/index.css">
+    <title>ibrahim</title>
+</head>
+<body class="w3-white">       
+    <div class="topcontainer">
+        <div class="topbran w3-padding w3-text-light-gray">
+            <p class="w3-large w3-margin">
+                <b>Hey, What Whould<br> You like ti learn <br>to day?</b>
+            </p>
+            <div class="w3-padding w3-margin">
+                <div class="w3-padding w3-round-xxlarge opaque btn search" onclick="w3.show('#search')"><i
+                        class="fa fa-search"> Search hear ...</i></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottombran " id="courContaint">
+        <div class="courseItem" w3-repeat="cours" onclick="detailcours()">
+            <div class="imgContainer w3-light-gray w3-padding">
+                <span class="itemicon w3-jumbo"><i class="{{icon}}"></i></span>
+            </div>
+            <div class="w3-padding w3-center">
+                <span class="w3-text-gray"><b>{{title}}</b></span><br>
+                <span class="w3-small w3-text-gray">{{cours_number}} courses</span>
+            </div>
+        </div>         
+    </div>    
+    <!-- modal -->
+    <div class="w3-modal w3-animate-opacity" id="search">
+        <div class="w3-modal-content w3-padding w3-light-gray w3-round-xlarge w3-animate-zoom" style="width: 100px;">
+            <div class="w3-bar">
+                <div class="w3-right w3-text-red w3-padding w3-large w3-round-xxlarge btn" onclick="w3.hide('#search')">
+                    <i class="fa fa-close"></i></div>
+                <h3 class="w3-text-gray">Search</h3>
+            </div>
+            <form action="#" class="">
+                <div class="w3-row w3-border w3-round-xlarge" style="overflow: hidden;">
+                    <button type="submit" class="w3-col w3-padding w3-right btn" Style="width: 50px;"><i
+                            class="fa fa-search"></i></button>
+                    <div class="w3-rest">
+                        <input type="text" name="search" id="" class="w3-input w3-border-0 w3-text-gray">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../../js/w3.js"></script>
+    <script >
+        (function(){
+        w3.getHttpObject("../../js/cours.json", (res) => {
+        w3.displayObject('courContaint',res);
+        });
+        })();
+
+        function detailcours(id){
+        let link = "detailcour";
+        if(id){
+        link=id;
+        }
+        link+=".html"
+        window.location.href =link;
+        }
+    </script>
+</body>
+</html>
